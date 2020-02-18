@@ -1,25 +1,31 @@
+#!/usr/bin/Python
+# Author:   frnyb
+# Date:     20201802
+
 import cv2
 import numpy as np
 
 from math import sqrt
 
-img_filename = "../input/DJI_0237.JPG"
+IMG_FILENAME = "../input/DJI_0237.JPG"
 
-def segment_rgb(bgr_img, bgr_lowerb, bgr_upperb, threshold):
+BGR_MEAN = (1, 2, 3)
+BGR_STDEV = (1, 2, 3)
+
+CIELAB_MEAN = (1, 2, 3)
+CIELAB_STDEV = (1, 2, 3)
+
+def segment_bgr(bgr_img, bgr_lowerb, bgr_upperb):
     seg_img = cv2.inRange(bgr_img, bgr_lowerb, bgr_upperb)
 
-    ret, thresh_img = cv2.threshold(seg_img, threshold, 255, 0)
+    return seg_img
 
-    return seg_img, thresh_img
-
-def segment_cielab(bgr_img, lab_lowerb, lab_upperb, threshold):
+def segment_cielab(bgr_img, lab_lowerb, lab_upperb):
     lab_img = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2LAB)
 
     seg_img = cv2.inRange(lab_img, lab_lowerb, lab_upperb)
 
-    ret, thresh_img = cv2.threshold(seg_img, threshold, 255, 0)
-
-    return seg_img, thresh_img
+    return seg_img
 
 def segment_hist_backpr(targ_img_bgr, obj_img_bgr, threshold):
     targ_img_hsv = cv2.cvtColor(targ_img_bgr, cv2.COLOR_BGR2HSV)
@@ -39,9 +45,9 @@ def segment_hist_backpr(targ_img_bgr, obj_img_bgr, threshold):
     res = cv2.bitwise_and(targ_img_bgr, thresh)
     res = np.vstack((targ_img_bgr, thresh, res))
 
-    return dst, thresh
+    return dst
 
-def segment_dist(img_bgr, bgr_val, threshold):
+def segment_dist(img_bgr, bgr_val):
     img_sub = np.zeros(img_bgr.shape)
     img_sub[:, :, 0] = np.subtract(img_bgr[:, :, 0], bgr_val[0])
     img_sub[:, :, 1] = np.subtract(img_bgr[:, :, 1], bgr_val[1])
@@ -51,19 +57,23 @@ def segment_dist(img_bgr, bgr_val, threshold):
 
     img_dist = np.divide(img_dist, img_dist.max())
 
+    img_dist = np.subtract(1, img_dist)
+
     img_dist = np.multiply(img_dist, 255)
 
-    ret, thresh_img = cv2.threshold(img_dist, threshold, 255, 0)
-
-    return img_dist, thresh_img
-
+    return img_dist
 
 if __name__ == "__main__":
-    img = cv2.imread(img_filename)
+    img = cv2.imread(IMG_FILENAME)
 
-    # seg_img, thresh_img = segment_cielab(img, (0, 0, 127), (255, 255, 255), 127)
+    bgr_lowerb = (BGR_MEAN[0] - BGR_STDEV[0], BGR_MEAN[1] - BGR_STDEV[1], BGR_MEAN[2] - BGR_STDEV[2])
+    bgr_upperb = (BGR_MEAN[0] + BGR_STDEV[0], BGR_MEAN[1] + BGR_STDEV[1], BGR_MEAN[2] + BGR_STDEV[2])
+    img_seg_bgr = segment_bgr(img, bgr_lowerb, bgr_upperb)
 
-    seg_img, threhs_img = segment_dist(img, (0, 127, 255), 127)
+    lab_lowerb = (CIELAB_MEAN[0] - CIELAB_STDEV[0], CIELAB_MEAN[1] - CIELAB_STDEV[1], CIELAB_MEAN[2] - CIELAB_STDEV[2])
+    lab_upperb = (CIELAB_MEAN[0] + CIELAB_STDEV[0], CIELAB_MEAN[1] + CIELAB_STDEV[1], CIELAB_MEAN[2] + CIELAB_STDEV[2])
+    img_seg_lab = segment_bgr(img, lab_lowerb, lab_upperb)
 
-    cv2.imwrite("img.png", seg_img)
+    # img_seg_hist = segment_hist_backpr()
 
+    img_seg_dist = segment_dist(img, BGR_MEAN)
