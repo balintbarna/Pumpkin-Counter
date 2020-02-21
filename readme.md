@@ -15,3 +15,5 @@ make download_images
 pipenv install
 ```
 
+# Documentation
+Report and more detailed documentation can be found in [docs](./docs/index.rst)
