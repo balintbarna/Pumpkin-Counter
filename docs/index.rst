@@ -12,3 +12,11 @@ Counting Pumpkins
 .. include:: ex3.rst
 
 .. include:: ex4.rst
+
+.. include:: ex5.rst
+
+.. include:: ex6.rst
+
+.. include:: ex7.rst
+
+.. include:: ex8.rst
