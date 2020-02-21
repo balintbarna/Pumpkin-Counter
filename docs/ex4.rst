@@ -1,5 +1,5 @@
-Exercise 4
-__________
+Exercise 4 - Filtering
+______________________
 
 Slight natural variations in color can cause big differences in the performance of our detection.
 In order to get a more consistent look on the pumpkins we used a blurring algorithm.

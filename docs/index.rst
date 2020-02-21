@@ -1,5 +1,4 @@
-Counting Pumpkins
-=================
+.. include:: title.rst
 
 .. include:: authors.rst
 
