@@ -1,0 +1,21 @@
+{
+	"img_filename": "../input/DJI_0237.JPG", 
+	"pumpkin_bgr_properties": 
+	{
+		"b_mean": 1, 
+		"g_mean": 1, 
+		"r_mean": 1, 
+		"b_stdev": 1, 
+		"g_stdev": 1, 
+		"r_stdev": 1
+	}, 
+	"pumpkin_lab_properties": 
+	{
+		"l_mean": 1, 
+		"a_mean": 1, 
+		"b_mean": 1,
+		"l_stdev": 1,
+		"a_stdev": 1,
+		"b_stdev": 1
+	}
+}
