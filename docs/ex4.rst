@@ -7,7 +7,7 @@ Our choice of algorithm is median blur. It performs nicely in terms of smoothing
 
 Here is a showcase of the filter in action. Original (left) and filtered (right)
 
-.. image:: ../input/DJI_0237.JPG
+.. image:: images/ori_smol.jpg
     :width: 49 %
-.. image:: ../output/blurred.jpg
+.. image:: images/blurred_smol.jpg
     :width: 49 %
