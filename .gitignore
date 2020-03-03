@@ -3,3 +3,17 @@ output/
 __pycache__/
 
 Pipfile.lock
+
+# LaTeX
+*-blx.bib
+*.log
+*.bbl
+*.blg
+*.aux
+*.out
+*.xml
+*.toc
+*.synctex.gz
+*.bak
+*.pdf
+
