@@ -3,7 +3,12 @@
 \section{Counting Pumpkins}
 exercises 3/5, 6 and 7
 
-In this exercise the goal was to use the segmented image to count the number of pumpkins. We used openCV's contour detector functions to find closed contours. This leaves us with many overlapping results.
+In this exercise the goal was to use the segmented image to count the number of pumpkins.
+
+\subsection{Counting Algorithm}
+
+We used openCV's contour detector functions to find closed contours.
+This leaves us with many overlapping results.
 
 We need to find a criteria or a method to filter the undesirable matches. A simple method we tried was to use the average pumpkin diameter and disregard those mathes that have a distance to a unique match less than the average diameter.
 
@@ -23,7 +28,7 @@ INSERT IMAGE HERE
 
 DRAW CONCLUSION HERE
 
-GSD STUFF
+\subsection{GSD}
 
 If we try to measure a size on an image, the unit will be in pixels. That is not very useful if we want to get information of pumpkin sizes or number of pumpkins per square meter. To connect image units to physical units, we calculate a GSD ratio in mm/pixel.
 
@@ -40,14 +45,18 @@ The following source code was used for this task:
 
 These were our parameters:
 
-Relative height: 54.2 m
-Field-of-View: 73.7 °
+\begin{verbatim}
+    Relative height: 54.2 m
+    Field-of-View: 73.7 °
+\end{verbatim}
 
 
 We got the following results:
 
-Image width: 81.24119485997007 m
-Image height: 45.69817210873316 m
-Ratio: 14.846709586982833 mm/pixel
+\begin{verbatim}
+    Image width: 81.24119485997007 m
+    Image height: 45.69817210873316 m
+    Ratio: 14.846709586982833 mm/pixel
+\end{verbatim}
 
 \end{document}
