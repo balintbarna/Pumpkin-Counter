@@ -3,18 +3,23 @@
 \section{Color Analysis}
 %exercise 1
 
-If a person was told to count pumpkins on an image, that would be a straigt forward procedure if that person know how a pumpkin looks like. 
-That is one of the major difficulties of computer vision. Humans have a large knowledge of the world
+If a person was told to count pumpkins in an image, that would be a straigt forward procedure if that person know how a pumpkin looks like.\\
+Humans generally have prior knowledge about what pumpkins look like and can use that information to distinguish between them and other objects or the background.
+A computer does not have that kind of knowledge, and that is one of the major difficulties of computer vision.\par
+This sections described how the computer can be givin some prior knowledge about the characteristics of a pumpkin. 
 
-
-that is all the information they would need.
-Humans have prior knowledge about what pumpkins look like and can use that information to distinguish between them and other objects or the background.
-A computer does not have that knowledge, therefor it needs a definition of pumpkins.
-
-On the input image we have orange pumpkins on a green-brown background.
 Using this fact, one of the easiest ways to utilize computer vision for separating the pumpkins from the background is by color information.
 To learn pumpkin colors, we are annotating pumpkins on the image by hand, removing everything else from the image, and checking the three-channel histograms for the annotated parts.
 The goal is to know the color mean and standard deviation of pumpkins.
+
+
+The same roughly applies for computer vision, but one of the major difficulties of computer vision is the lack of general knowledge
+
+
+That is one of the major difficulties of computer vision. Humans have a large knowledge of the world where as computer systems does not
+
+
+
 
 \begin{figure}[H]
 	\centering
