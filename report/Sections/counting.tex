@@ -29,12 +29,14 @@ If we try to measure a size on an image, the unit will be in pixels. That is not
 
 The following source code was used for this task:
 
-%pixels = img.shape
-%alpha = math.radians(fov_deg / 2)
-%width = height_meters * 2 * math.tan(alpha)
-%ratio = width / pixels[0]
-%height = ratio * pixels[1]
-%ratio *= 1000 # convert to mm/pixel
+\begin{verbatim}
+    pixels = img.shape
+    alpha = math.radians(fov_deg / 2)
+    width = height_meters * 2 * math.tan(alpha)
+    ratio = width / pixels[0]
+    height = ratio * pixels[1]
+    ratio *= 1000 # convert to mm/pixel
+\end{verbatim}
 
 These were our parameters:
 
