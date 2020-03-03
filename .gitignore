@@ -16,4 +16,5 @@ Pipfile.lock
 *.synctex.gz
 *.bak
 *.pdf
-
+*.fls
+*.fdb_latexmk
