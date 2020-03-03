@@ -1,21 +1,27 @@
 {
 	"img_filename": "../input/DJI_0237.JPG", 
-	"pumpkin_bgr_properties": 
+	"bgr_properties": 
 	{
-		"b_mean": 1, 
-		"g_mean": 1, 
-		"r_mean": 1, 
-		"b_stdev": 1, 
-		"g_stdev": 1, 
-		"r_stdev": 1
+		"b_mean": 41, 
+		"g_mean": 103, 
+		"r_mean": 157, 
+		"b_stdev": 19, 
+		"g_stdev": 45, 
+		"r_stdev": 45,
+		"lowerb_stdev_scalar": 1,
+		"upperb_stdev_scalar": 2
 	}, 
-	"pumpkin_lab_properties": 
+	"lab_properties": 
 	{
 		"l_mean": 1, 
 		"a_mean": 1, 
 		"b_mean": 1,
 		"l_stdev": 1,
 		"a_stdev": 1,
-		"b_stdev": 1
-	}
+		"b_stdev": 1,
+		"lowerb_stdev_scalar": 1,
+		"upperb_stdev_scalar": 2
+	},
+	"pumpkin_diameter": 10,
+	"filter_ksize": 5
 }

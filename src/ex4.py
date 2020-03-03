@@ -1,6 +1,19 @@
+#!/usr/bin/Python
+"""
+    description here
+    
+    Author:     bakuv
+    Date:       
+"""
+
+###############################################################
+# Imports
+
 import cv2
 import constants as cn
 
+###############################################################
+# Methods
 
 def median(img, ksize):
     """
@@ -8,6 +21,8 @@ def median(img, ksize):
     """
     return cv2.medianBlur(img, ksize)
 
+###############################################################
+# Main
 
 if __name__ == '__main__':
     blurred = median(cn.original_img, 9)
