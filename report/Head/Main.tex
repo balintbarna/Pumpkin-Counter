@@ -1,0 +1,43 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{../Head/setup}
+\raggedbottom
+\linespread{1.15}
+\graphicspath{{../Figures/}{../Figures/}}
+\DeclareGraphicsExtensions{.png,.pdf,.jpg}
+
+\addbibresource{Bibliography.bib}
+
+\begin{document}
+
+    \cfoot[]{ \fancyplain{}{\footnotesize} }
+    \fancyhead{}
+    
+    \subfile{Titlepage}
+    \clearpage
+    
+    \setcounter{tocdepth}{3}
+    \setcounter{page}{0}	
+	\tableofcontents 
+	\thispagestyle{empty}
+    \clearpage
+	\thispagestyle{fancy}    
+       
+    \fancyhead[R]{\normalsize\rightmark}    \fancyhead[L]{\large \textsc{Section }\normalsize\thesection}
+      
+    % Sections
+    \subfile{../Sections/Introduction}
+    \subfile{../Sections/Ex1}
+    \subfile{../Sections/Ex2}
+    \subfile{../Sections/Ex3}
+    \subfile{../Sections/Ex4}
+    \subfile{../Sections/Ex5}
+    \subfile{../Sections/Ex6}
+    \subfile{../Sections/Ex7}
+    \subfile{../Sections/Ex7}
+    \subfile{../Sections/Discussion}
+    \subfile{../Sections/Conclusion}
+	% Citations
+    %\clearpage
+	%\printbibliography[heading=bibintoc]
+	
+\end{document}

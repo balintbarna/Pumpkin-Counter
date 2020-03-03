@@ -1,0 +1,2124 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 2.9.7300) (preloaded format=xelatex 2020.3.3)  3 MAR 2020 12:48
+entering extended mode
+**./Main.tex
+(Main.tex
+LaTeX2e <2020-02-02> patch level 1
+L3 programming layer <2020-02-08>
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(../Head/setup.sty
+
+LaTeX Warning: You have requested package `../Head/setup',
+               but the package provides `setup'.
+
+Package: setup 
+(/home/marcus/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count171
+\Gm@cntv=\count172
+\c@Gm@tempcnt=\count173
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks15
+
+(/home/marcus/.miktex/texmfs/install/tex/xelatex/xetexconfig/geometry.cfg))
+(/home/marcus/.miktex/texmfs/install/tex/latex/algorithms/algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count174
+\float@exts=\toks16
+\float@box=\box45
+\@float@everytoks=\toks17
+\@floatcapt=\box46
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks18
+\c@algorithm=\count175
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count176
+\c@ALG@rem=\count177
+\c@ALG@nested=\count178
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
+\c@ALG@Lnr=\count179
+\c@ALG@blocknr=\count180
+\c@ALG@storecount=\count181
+\c@ALG@tmpcounter=\count182
+\ALG@tmplength=\skip51
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/home/marcus/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/home/marcus/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen143
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count183
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count184
+\leftroot@=\count185
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count186
+\DOTSCASE@=\count187
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
+\dotsspace@=\muskip16
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks20
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks21
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks22
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count195
+\c@@ppsavesec=\count196
+\c@@ppsaveapp=\count197
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2020/02/03 3.39 The Babel package
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/babel/switch.def
+File: switch.def 2020/02/03 3.39 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/marcus/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2020/02/03 3.39 Babel common definitions
+\babel@savecnt=\count198
+\U@D=\dimen152
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/babel/xebabel.def
+(/home/marcus/.miktex/texmfs/install/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read2
+\bbl@dirlevel=\count199
+)))
+(/home/marcus/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen153
+\lightrulewidth=\dimen154
+\cmidrulewidth=\dimen155
+\belowrulesep=\dimen156
+\belowbottomsep=\dimen157
+\aboverulesep=\dimen158
+\abovetopsep=\dimen159
+\cmidrulesep=\dimen160
+\cmidrulekern=\dimen161
+\defaultaddspace=\dimen162
+\@cmidla=\count266
+\@cmidlb=\count267
+\@aboverulesep=\dimen163
+\@belowrulesep=\dimen164
+\@thisruleclass=\count268
+\@lastruleclass=\count269
+\@thisrulewidth=\dimen165
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count270
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count271
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count272
+\c@listtotal=\count273
+\c@listcount=\count274
+\c@liststart=\count275
+\c@liststop=\count276
+\c@citecount=\count277
+\c@citetotal=\count278
+\c@multicitecount=\count279
+\c@multicitetotal=\count280
+\c@instcount=\count281
+\c@maxnames=\count282
+\c@minnames=\count283
+\c@maxitems=\count284
+\c@minitems=\count285
+\c@citecounter=\count286
+\c@maxcitecounter=\count287
+\c@savedcitecounter=\count288
+\c@uniquelist=\count289
+\c@uniquename=\count290
+\c@refsection=\count291
+\c@refsegment=\count292
+\c@maxextratitle=\count293
+\c@maxextratitleyear=\count294
+\c@maxextraname=\count295
+\c@maxextradate=\count296
+\c@maxextraalpha=\count297
+\c@abbrvpenalty=\count298
+\c@highnamepenalty=\count299
+\c@lownamepenalty=\count300
+\c@maxparens=\count301
+\c@parenlevel=\count302
+\blx@tempcnta=\count303
+\blx@tempcntb=\count304
+\blx@tempcntc=\count305
+\blx@maxsection=\count306
+\blx@maxsegment@0=\count307
+\blx@notetype=\count308
+\blx@parenlevel@text=\count309
+\blx@parenlevel@foot=\count310
+\blx@sectionciteorder@0=\count311
+\blx@entrysetcounter=\count312
+\labelnumberwidth=\skip55
+\labelalphawidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language1
+\c@mincomprange=\count313
+\c@maxcomprange=\count314
+\c@mincompwidth=\count315
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count316
+\c@savedafterword=\count317
+\c@annotator=\count318
+\c@savedannotator=\count319
+\c@author=\count320
+\c@savedauthor=\count321
+\c@bookauthor=\count322
+\c@savedbookauthor=\count323
+\c@commentator=\count324
+\c@savedcommentator=\count325
+\c@editor=\count326
+\c@savededitor=\count327
+\c@editora=\count328
+\c@savededitora=\count329
+\c@editorb=\count330
+\c@savededitorb=\count331
+\c@editorc=\count332
+\c@savededitorc=\count333
+\c@foreword=\count334
+\c@savedforeword=\count335
+\c@holder=\count336
+\c@savedholder=\count337
+\c@introduction=\count338
+\c@savedintroduction=\count339
+\c@namea=\count340
+\c@savednamea=\count341
+\c@nameb=\count342
+\c@savednameb=\count343
+\c@namec=\count344
+\c@savednamec=\count345
+\c@translator=\count346
+\c@savedtranslator=\count347
+\c@shortauthor=\count348
+\c@savedshortauthor=\count349
+\c@shorteditor=\count350
+\c@savedshorteditor=\count351
+\c@labelname=\count352
+\c@savedlabelname=\count353
+\c@institution=\count354
+\c@savedinstitution=\count355
+\c@lista=\count356
+\c@savedlista=\count357
+\c@listb=\count358
+\c@savedlistb=\count359
+\c@listc=\count360
+\c@savedlistc=\count361
+\c@listd=\count362
+\c@savedlistd=\count363
+\c@liste=\count364
+\c@savedliste=\count365
+\c@listf=\count366
+\c@savedlistf=\count367
+\c@location=\count368
+\c@savedlocation=\count369
+\c@organization=\count370
+\c@savedorganization=\count371
+\c@origlocation=\count372
+\c@savedoriglocation=\count373
+\c@origpublisher=\count374
+\c@savedorigpublisher=\count375
+\c@publisher=\count376
+\c@savedpublisher=\count377
+\c@language=\count378
+\c@savedlanguage=\count379
+\c@origlanguage=\count380
+\c@savedoriglanguage=\count381
+\c@pageref=\count382
+\c@savedpageref=\count383
+\shorthandwidth=\skip63
+\shortjournalwidth=\skip64
+\shortserieswidth=\skip65
+\shorttitlewidth=\skip66
+\shortauthorwidth=\skip67
+\shorteditorwidth=\skip68
+\locallabelnumberwidth=\skip69
+\locallabelalphawidth=\skip70
+\localshorthandwidth=\skip71
+\localshortjournalwidth=\skip72
+\localshortserieswidth=\skip73
+\localshorttitlewidth=\skip74
+\localshortauthorwidth=\skip75
+\localshorteditorwidth=\skip76
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count384
+\c@textcitetotal=\count385
+\c@textcitemaxnames=\count386
+\c@biburlbigbreakpenalty=\count387
+\c@biburlbreakpenalty=\count388
+\c@biburlnumpenalty=\count389
+\c@biburlucpenalty=\count390
+\c@biburllcpenalty=\count391
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count392
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count393
+\c@bbx:relatedtotal=\count394
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen166
+\captionmargin@=\dimen167
+\captionwidth=\dimen168
+\caption@tempdima=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count395
+\c@continuedfloat=\count396
+Package caption Info: float package is loaded.
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count397
+\cp@tempcnt=\count398
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count399
+\csq@gtype=\count400
+\csq@glevel=\count401
+\csq@qlevel=\count402
+\csq@maxlvl=\count403
+\csq@tshold=\count404
+\csq@ltx@everypar=\toks26
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2020/02/04{} The CircuiTikz circuit drawing package version
+ 1.0
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.t
+ex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen173
+\pgfutil@tempdimb=\dimen174
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-l
+ists.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.de
+f
+\pgfutil@abb=\box49
+ (/home/marcus/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.te
+x
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.
+code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count405
+\c@pgf@countb=\count406
+\c@pgf@countc=\count407
+\c@pgf@countd=\count408
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count409
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-xetex.d
+ef
+File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-dvipdfm
+x.def
+File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-
+pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)
+\pgfsys@objnum=\count410
+)))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath
+.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count411
+\pgfsyssoftpath@bigbuffer@items=\count412
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol
+.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/home/marcus/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.te
+x
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+ (/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.te
+x
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count413
+\pgfmath@box=\box50
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code
+.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basi
+c.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trig
+onometric.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rand
+om.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comp
+arison.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base
+.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.roun
+d.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc
+.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.inte
+gerarithmetics.code.tex)))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count414
+)) (/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.c
+ode.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathcons
+truct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusag
+e.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.c
+ode.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box51
+\pgf@hbox=\box52
+\pgf@layerbox@main=\box53
+\pgf@picture@serial@count=\count415
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphics
+tate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen262
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransfor
+mations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.co
+de.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.
+code.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproc
+essing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.c
+ode.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen266
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.co
+de.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count416
+\pgf@shadingcount=\count417
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.co
+de.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal
+.code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box54
+))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.c
+ode.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspar
+ency.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns
+.code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code
+.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.co
+de.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box55
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code
+.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+)) (/home/marcus/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.co
+de.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotha
+ndlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count418
+\pgfplotmarksize=\dimen272
+)
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikz@lastmovetox=\dimen277
+\tikz@lastmovetoy=\dimen278
+\tikzleveldistance=\dimen279
+\tikzsiblingdistance=\dimen280
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count419
+\tikznumberofchildren=\count420
+\tikznumberofcurrentchild=\count421
+\tikz@fig@count=\count422
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.co
+de.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count423
+\pgfmatrixcurrentcolumn=\count424
+\pgf@matrix@numberofcolumns=\count425
+)
+\tikz@expandcount=\count426
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows
+.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen281
+\pgfarrowlength=\dimen282
+\pgfarrowwidth=\dimen283
+\pgfarrowlinewidth=\dimen284
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulebending.c
+ode.tex
+File: pgfmodulebending.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulenonlinear
+transformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgftransformnonlinearflatness=\dimen285
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibrarycurvil
+inear.code.tex
+File: pgflibrarycurvilinear.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@curvilinear@time@a=\dimen286
+\pgf@curvilinear@length@a=\dimen287
+\pgf@curvilinear@length@b=\dimen288
+\pgf@curvilinear@length@c=\dimen289
+\pgf@curvilinear@length@d=\dimen290
+)
+\pgf@arrows@the@rigidity=\dimen291
+))
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count427
+\pgf@circ@count@b=\count428
+\pgf@circ@count@c=\count429
+\pgf@circ@res@up=\dimen292
+\pgf@circ@res@down=\dimen293
+\pgf@circ@res@zero=\dimen294
+\pgf@circ@res@left=\dimen295
+\pgf@circ@res@right=\dimen296
+\pgf@circ@res@other=\dimen297
+\pgf@circ@res@step=\dimen298
+\pgf@circ@res@temp=\dimen299
+\pgfstartlinewidth=\dimen300
+\pgf@circ@Rlen=\dimen301
+\pgf@circ@scaled@Rlen=\dimen302
+) (/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircutils.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircshapes.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircmonopoles.te
+x)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircbipoles.tex)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count430
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircquadpoles.te
+x)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircmultipoles.t
+ex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcirclabel.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircvoltage.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircflow.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/circuitikz/pgfcircpath.tex)
+(/home/marcus/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
+\integerpart=\count431
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+\decimalpart=\count432
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 102 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 120 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 125 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 183 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 266 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 295 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 302 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 333 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 409 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 428 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 434 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 595 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 597 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 599 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 602 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 610 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 615 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 633 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 635 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 637 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 647 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 653 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 678 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 700 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 705 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 719 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 762 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 810 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 831 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 861 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 862 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 908 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 964 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1006 replaced by U+FFFD.
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
+(/home/marcus/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-08 L3 programming layer (loader) 
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/l3backend/l3backend-xdvipdfmx.de
+f
+File: l3backend-xdvipdfmx.def 2020-02-03 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count433
+\l__pdf_internal_box=\box60
+\g__pdf_backend_object_int=\count434
+\g__pdf_backend_annotation_int=\count435
+)) (/home/marcus/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-02-08 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count436
+\g__xparse_grabber_int=\count437
+\l__xparse_m_args_int=\count438
+\l__xparse_v_nesting_int=\count439
+)
+Package: siunitx 2020/01/15 v2.7u A comprehensive (SI) units package
+ (/home/marcus/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen303
+\ar@mcellbox=\box61
+\extrarowheight=\dimen304
+\NC@list=\toks39
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box62
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-08 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box63
+\l__siunitx_tmp_dim=\dimen305
+\l__siunitx_tmp_int=\count440
+\l__siunitx_number_mantissa_length_int=\count441
+\l__siunitx_number_uncert_length_int=\count442
+\l__siunitx_round_int=\count443
+\l__siunitx_process_decimal_int=\count444
+\l__siunitx_process_uncertainty_int=\count445
+\l__siunitx_process_fixed_int=\count446
+\l__siunitx_process_integer_min_int=\count447
+\l__siunitx_process_precision_int=\count448
+\l__siunitx_group_min_int=\count449
+\l__siunitx_angle_marker_box=\box64
+\l__siunitx_angle_unit_box=\box65
+\l__siunitx_angle_marker_dim=\dimen306
+\l__siunitx_angle_unit_dim=\dimen307
+\l__siunitx_unit_int=\count450
+\l__siunitx_unit_denominator_int=\count451
+\l__siunitx_unit_numerator_int=\count452
+\l__siunitx_unit_prefix_int=\count453
+\l__siunitx_unit_prefix_base_int=\count454
+\l__siunitx_unit_prefix_gram_int=\count455
+\l__siunitx_number_product_int=\count456
+\c__siunitx_one_fill_skip=\skip79
+\l__siunitx_table_unit_align_skip=\skip80
+\l__siunitx_table_exponent_dim=\dimen308
+\l__siunitx_table_integer_dim=\dimen309
+\l__siunitx_table_mantissa_dim=\dimen310
+\l__siunitx_table_marker_dim=\dimen311
+\l__siunitx_table_result_dim=\dimen312
+\l__siunitx_table_uncert_dim=\dimen313
+\l__siunitx_table_fill_pre_dim=\dimen314
+\l__siunitx_table_fill_post_dim=\dimen315
+\l__siunitx_table_fill_mid_dim=\dimen316
+\l__siunitx_table_pre_box=\box66
+\l__siunitx_table_post_box=\box67
+\l__siunitx_table_mantissa_box=\box68
+\l__siunitx_table_result_box=\box69
+\l__siunitx_table_number_align_skip=\skip81
+\l__siunitx_table_text_align_skip=\skip82
+ (/home/marcus/.miktex/texmfs/install/tex/latex/translator/translator.sty
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
+))
+
+Package circuitikz Warning: You did not specify one of the voltage directions:
+(circuitikz)                  oldvoltagedirection, nooldvoltagedirection, 
+(circuitikz)                  RPvoltages or EFvoltages 
+(circuitikz)                Default directions may have changed, 
+(circuitikz)                please check the manual.
+
+) (/home/marcus/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip83
+\enit@outerparindent=\dimen317
+\enit@toks=\toks40
+\enit@inbox=\box70
+\enit@count@id=\count457
+\enitdp@description=\count458
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip84
+\f@nch@O@elh=\skip85
+\f@nch@O@erh=\skip86
+\f@nch@O@olh=\skip87
+\f@nch@O@orh=\skip88
+\f@nch@O@elf=\skip89
+\f@nch@O@erf=\skip90
+\f@nch@O@olf=\skip91
+\f@nch@O@orf=\skip92
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count459
+\l__fontspec_language_int=\count460
+\l__fontspec_strnum_int=\count461
+\l__fontspec_tmp_int=\count462
+\l__fontspec_tmpa_int=\count463
+\l__fontspec_tmpb_int=\count464
+\l__fontspec_tmpc_int=\count465
+\l__fontspec_em_int=\count466
+\l__fontspec_emdef_int=\count467
+\l__fontspec_strong_int=\count468
+\l__fontspec_strongdef_int=\count469
+\l__fontspec_tmpa_dim=\dimen318
+\l__fontspec_tmpb_dim=\dimen319
+\l__fontspec_tmpc_dim=\dimen320
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2020/01/25 v2.0m Standard LaTeX package
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/fontspec/fontspec.cfg)))
+(/home/marcus/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/home/marcus/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen321
+\Hy@linkcounter=\count470
+\Hy@pagecounter=\count471
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count472
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count473
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen322
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count474
+\Field@Width=\dimen323
+\Fld@charsize=\dimen324
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+\Hy@abspage=\count475
+\c@Item=\count476
+\c@Hfootnote=\count477
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020/01/14 v7.00d Hyperref driver for XeTeX
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box71
+\c@Hy@AnnotLevel=\count478
+\HyField@AnnotCount=\count479
+\Fld@listcount=\count480
+\c@bookmark@seq@number=\count481
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/home/marcus/.miktex/texmfs/install/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.st
+y
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip93
+) (/home/marcus/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count482
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip94
+\multirow@cntb=\count483
+\multirow@dima=\skip95
+\bigstrutjot=\dimen325
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count484
+\calc@Bcount=\count485
+\calc@Adimen=\dimen326
+\calc@Bdimen=\dimen327
+\calc@Askip=\skip96
+\calc@Bskip=\skip97
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count486
+\calc@Cskip=\skip98
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count487
+\l_MT_multwidth_dim=\dimen328
+\origjot=\skip99
+\l_MT_shortvdotswithinadjustabove_dim=\dimen329
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen330
+\l_MT_above_intertext_sep=\dimen331
+\l_MT_below_intertext_sep=\dimen332
+\l_MT_above_shortintertext_sep=\dimen333
+\l_MT_below_shortintertext_sep=\dimen334
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/mdwtools/mdwlist.sty
+Package: mdwlist 1996/05/02 1.1 Various list-related things
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read5
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box72
+\tcb@upperbox=\box73
+\tcb@lowerbox=\box74
+\tcb@phantombox=\box75
+\c@tcbbreakpart=\count488
+\c@tcblayer=\count489
+\tcolorbox@number=\count490
+\tcb@temp=\box76
+\tcb@temp=\box77
+\tcb@temp=\box78
+\tcb@temp=\box79
+\tcb@out=\write5
+\tcb@record@out=\write6
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.22'
+\c@tcbrastercolumn=\count491
+\c@tcbrasterrow=\count492
+\c@tcbraster=\count493
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.22'
+\tcb@waterbox=\box80
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbskinsjigsaw.code.te
+x
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.22'
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.22'
+\tcb@testbox=\box81
+\tcb@totalupperbox=\box82
+\tcb@totallowerbox=\box83
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.22'
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
+\tcbfitdim=\dimen335
+\tcb@lowerfitdim=\dimen336
+\tcb@upperfitdim=\dimen337
+\tcb@cur@hbadness=\count494
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.22'
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingsutf8.code.t
+ex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.22'
+(/home/marcus/.miktex/texmfs/install/tex/latex/listingsutf8/listingsutf8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count495
+\lst@gtempboxa=\box84
+\lst@token=\toks43
+\lst@length=\count496
+\lst@currlwidth=\dimen338
+\lst@column=\count497
+\lst@pos=\count498
+\lst@lostspace=\dimen339
+\lst@width=\dimen340
+\lst@newlines=\count499
+\lst@lineno=\count500
+\lst@maxwidth=\dimen341
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count501
+\lst@skipnumbers=\count502
+\lst@framebox=\box85
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+
+Package listingsutf8 Warning: Package loading is aborted because of missing \pd
+f@unescapehex.
+(listingsutf8)                It is provided by pdfTeX >= 1.30.
+
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '4.22'
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcblistingscore.code.t
+ex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '4.22'
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '4.22'
+(/home/marcus/.miktex/texmfs/install/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+))
+\c@tcblisting=\count503
+)))
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '4.22'
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '4.22'
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '4.22'
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfading
+s.code.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/home/marcus/.miktex/texmfs/install/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '4.22'
+)) (/home/marcus/.miktex/texmfs/install/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count504
+\mult@box=\box86
+\multicol@leftmargin=\dimen342
+\c@unbalance=\count505
+\c@collectmore=\count506
+\doublecol@number=\count507
+\multicoltolerance=\count508
+\multicolpretolerance=\count509
+\full@width=\dimen343
+\page@free=\dimen344
+\premulticols=\dimen345
+\postmulticols=\dimen346
+\multicolsep=\skip100
+\multicolbaselineskip=\skip101
+\partial@page=\box87
+\last@line=\box88
+\maxbalancingoverflow=\dimen347
+\mult@rightbox=\box89
+\mult@grightbox=\box90
+\mult@gfirstbox=\box91
+\mult@firstbox=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\c@minrows=\count510
+\c@columnbadness=\count511
+\c@finalcolumnbadness=\count512
+\last@try=\dimen348
+\multicolovershoot=\dimen349
+\multicolundershoot=\dimen350
+\mult@nat@firstbox=\box130
+\colbreak@box=\box131
+\mc@col@check@num=\count513
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/parskip/parskip.sty
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+\AM@pagewidth=\dimen351
+\AM@pageheight=\dimen352
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2020/01/28 v0.5q Pdfpages driver for XeTeX (AM)
+)
+\AM@pagebox=\box132
+\AM@global@opts=\toks44
+\AM@pagecnt=\count514
+\AM@toc@title=\toks45
+\c@AM@survey=\count515
+\AM@templatesizebox=\box133
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex
+)
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+ (/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks46
+\t@pgfplots@tokb=\toks47
+\t@pgfplots@tokc=\toks48
+\pgfplots@tmpa=\dimen353
+\c@pgfplots@coordindex=\count516
+\c@pgfplots@scanlineindex=\count517
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneri
+c.code.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.
+code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplo
+tsoldpgfsupp_loader.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.co
+de.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.cod
+e.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplot
+sliststructure.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplot
+sliststructureext.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplot
+sarray.code.tex
+\c@pgfplotsarray@tmp=\count518
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplot
+smatrix.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstabl
+eshared.code.tex
+\c@pgfplotstable@counta=\count519
+\t@pgfplotstable@a=\toks49
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplot
+sdeque.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.c
+ode.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.d
+ata.code.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.ver
+b.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplo
+ts.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count520
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplot
+s.surfshading.pgfsys-xetex.def
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplot
+s.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count521
+))))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap
+.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.co
+de.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.
+code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.
+code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandl
+er.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage
+.code.tex)))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code
+.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessi
+ng.code.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.co
+de.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code
+.tex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.te
+x)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.t
+ex)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecoratio
+ns.code.tex
+\pgfdecoratedcompleteddistance=\dimen354
+\pgfdecoratedremainingdistance=\dimen355
+\pgfdecoratedinputsegmentcompleteddistance=\dimen356
+\pgfdecoratedinputsegmentremainingdistance=\dimen357
+\pgf@decorate@distancetomove=\dimen358
+\pgf@decorate@repeatstate=\count522
+\pgfdecorationsegmentamplitude=\dimen359
+\pgfdecorationsegmentlength=\dimen360
+)
+\tikz@lib@dec@box=\box134
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathmorphing.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathmorphing.code.tex))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarydecorations.pathreplacing.code.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgfl
+ibrarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count523
+\pgfplots@xmin@reg=\dimen361
+\pgfplots@xmax@reg=\dimen362
+\pgfplots@ymin@reg=\dimen363
+\pgfplots@ymax@reg=\dimen364
+\pgfplots@zmin@reg=\dimen365
+\pgfplots@zmax@reg=\dimen366
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotma
+rks.code.tex
+File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))) (/home/marcus/.miktex/texmfs/install/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks50
+\SOUL@lasttoken=\toks51
+\SOUL@cmds=\toks52
+\SOUL@buffer=\toks53
+\SOUL@token=\toks54
+\SOUL@spaceskip=\skip102
+\SOUL@ttwidth=\dimen367
+\SOUL@uldp=\dimen368
+\SOUL@ulht=\dimen369
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/spverbatim/spverbatim.sty
+Package: spverbatim 2009/08/10 v1.0 Verbatim with breakable spaces
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2019/10/30 v1.5 Multi-file projects (package)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/import/import.sty
+Package: import 2009/03/23  v 5.1
+))
+(/home/marcus/.miktex/texmfs/install/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen370
+\SC@CAPWD=\dimen371
+\SC@tempdima=\dimen372
+\SC@tempdimb=\dimen373
+\c@SC@C=\count524
+\SC@BOX=\box135
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count525
+\c@subtable=\count526
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box136
+\beforetitleunit=\skip103
+\aftertitleunit=\skip104
+\ttl@plus=\dimen374
+\ttl@minus=\dimen375
+\ttl@toksa=\toks55
+\titlewidth=\dimen376
+\titlewidthlast=\dimen377
+\titlewidthfirst=\dimen378
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip105
+\cftbeforetoctitleskip=\skip106
+\cftaftertoctitleskip=\skip107
+\cftbeforepartskip=\skip108
+\cftpartnumwidth=\skip109
+\cftpartindent=\skip110
+\cftbeforesecskip=\skip111
+\cftsecindent=\skip112
+\cftsecnumwidth=\skip113
+\cftbeforesubsecskip=\skip114
+\cftsubsecindent=\skip115
+\cftsubsecnumwidth=\skip116
+\cftbeforesubsubsecskip=\skip117
+\cftsubsubsecindent=\skip118
+\cftsubsubsecnumwidth=\skip119
+\cftbeforeparaskip=\skip120
+\cftparaindent=\skip121
+\cftparanumwidth=\skip122
+\cftbeforesubparaskip=\skip123
+\cftsubparaindent=\skip124
+\cftsubparanumwidth=\skip125
+\cftbeforeloftitleskip=\skip126
+\cftafterloftitleskip=\skip127
+\cftbeforefigskip=\skip128
+\cftfigindent=\skip129
+\cftfignumwidth=\skip130
+\c@lofdepth=\count527
+\c@lotdepth=\count528
+\cftbeforelottitleskip=\skip131
+\cftafterlottitleskip=\skip132
+\cftbeforetabskip=\skip133
+\cfttabindent=\skip134
+\cfttabnumwidth=\skip135
+
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
+ out. on input line 1156.
+
+) (/home/marcus/.miktex/texmfs/install/tex/latex/tocvsec2/tocvsec2.sty
+Package: tocvsec2 2014/03/10 v1.3a variable ToC section entries
+\c@max@tocdepth=\count529
+\c@max@secnumdepth=\count530
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen379
+\TX@old@table=\dimen380
+\TX@old@col=\dimen381
+\TX@target=\dimen382
+\TX@delta=\dimen383
+\TX@cols=\count531
+\TX@ftn=\toks56
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+(/home/marcus/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks57
+\XKV@tempa@toks=\toks58
+)
+\XKV@depth=\count532
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+\c@@todonotes@numberoftodonotes=\count533
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen384
+\WF@size=\dimen385
+\c@WF@wrappedlines=\count534
+\WF@box=\box137
+\WF@everypar=\toks59
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/home/marcus/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibrarypatter
+ns.code.tex
+File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+\enitdp@Indentation=\count535
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+ (Main.aux)
+\openout1 = `Main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+0.
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=674.33032pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-21.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/home/marcus/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `Main-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Main.bbl' not found.
+
+No file Main.bbl.
+Package biblatex Info: Reference section=0 on input line 10.
+Package biblatex Info: Reference segment=0 on input line 10.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: sidecap package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ABD: EveryShipout initializing macros
+(/home/marcus/.miktex/texmfs/install/tex/latex/translator/translator-basic-dict
+ionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/home/marcus/.miktex/texmfs/install/tex/latex/siunitx/siunitx-abbreviations.cf
+g
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+\AtBeginShipoutBox=\box138
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 10.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 10.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 10.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 10.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 10.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 10.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 10.
+LaTeX Font Info:    Redeclaring math accent \check on input line 10.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 10.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 10.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 10.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 10.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 1
+0.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 10.
+Package hyperref Info: Link coloring OFF on input line 10.
+ (/home/marcus/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/home/marcus/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.
+sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count536
+)
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
+ (Main.out) (Main.out)
+\@outlinefile=\write7
+\openout7 = `Main.out'.
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 10.
+\c@lstlisting=\count537
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+)
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.16} (current compat level: 1.9).
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
+
+(/home/marcus/.miktex/texmfs/install/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip136
+\RaggedLeftLeftskip=\skip137
+\RaggedRightLeftskip=\skip138
+\CenteringRightskip=\skip139
+\RaggedLeftRightskip=\skip140
+\RaggedRightRightskip=\skip141
+\CenteringParfillskip=\skip142
+\RaggedLeftParfillskip=\skip143
+\RaggedRightParfillskip=\skip144
+\JustifyingParfillskip=\skip145
+\CenteringParindent=\skip146
+\RaggedLeftParindent=\skip147
+\RaggedRightParindent=\skip148
+\JustifyingParindent=\skip149
+) (Titlepage.tex
+
+LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/m/sc' undefined
+(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 8.
+
+File: ../Figures/SDUlogo.png Graphic file (type bmp)
+<../Figures/SDUlogo.png>
+(/home/marcus/.miktex/texmfs/install/tex/generic/stringenc/se-ascii-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
+
+)
+[1
+
+]) (Main.toc)
+\tf@toc=\write8
+\openout8 = `Main.toc'.
+
+ [0
+
+] (../Sections/Introduction.tex) (../Sections/Ex1.tex)
+(../Sections/Ex2.tex) (../Sections/Ex3.tex) (../Sections/Ex4.tex)
+(../Sections/Ex5.tex) (../Sections/Ex6.tex) (../Sections/Ex7.tex)
+(../Sections/Ex7.tex) (../Sections/Discussion.tex) (../Sections/Conclusion.tex)
+
+AED: lastpage setting LastPage
+[1
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+ (Main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 775A9AECEF8D37FAD2A2F021FB7F4713;525.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'Main.run.xml'.
+\openout1 = `Main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 64624 strings out of 416584
+ 1556293 string characters out of 2940772
+ 2640553 words of memory out of 3000000
+ 80718 multiletter control sequences out of 15000+200000
+ 537147 words of font info for 74 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 76i,12n,107p,1195b,3980s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Main.pdf (3 pages).
