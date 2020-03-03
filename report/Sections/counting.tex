@@ -3,4 +3,50 @@
 \section{Counting Pumpkins}
 exercises 3/5, 6 and 7
 
+In this exercise the goal was to use the segmented image to count the number of pumpkins. We used openCV's contour detector functions to find closed contours. This leaves us with many overlapping results.
+
+We need to find a criteria or a method to filter the undesirable matches. A simple method we tried was to use the average pumpkin diameter and disregard those mathes that have a distance to a unique match less than the average diameter.
+
+INSERT IMAGE HERE
+
+This method disregards a lot of real matches, and also leaves some false double matches on large targets.
+
+The next method we tried is clustering based on a hierarchical search. The algorithm stops when the shortest distance between two clusters is more than the usual pumpkin diameter. Resulst can be seen on
+
+INSERT IMAGE HERE
+
+DRAW CONCLUSION ABOUT DIFFERENCES BETWEEN THE TWO METHODS
+
+The segmentation is not that accurate on the original image. The cause of this inaccuracy can be random noise or even occluding objects like weeds or bugs. To correct for this error, we used the filter from the previous exercise and analysed the performance difference.
+
+INSERT IMAGE HERE
+
+DRAW CONCLUSION HERE
+
+GSD STUFF
+
+If we try to measure a size on an image, the unit will be in pixels. That is not very useful if we want to get information of pumpkin sizes or number of pumpkins per square meter. To connect image units to physical units, we calculate a GSD ratio in mm/pixel.
+
+The following source code was used for this task:
+
+pixels = img.shape
+alpha = math.radians(fov_deg / 2)
+width = height_meters * 2 * math.tan(alpha)
+ratio = width / pixels[0]
+height = ratio * pixels[1]
+ratio *= 1000 # convert to mm/pixel
+
+
+These were our parameters:
+
+Relative height: 54.2 m
+Field-of-View: 73.7 °
+
+
+We got the following results:
+
+Image width: 81.24119485997007 m
+Image height: 45.69817210873316 m
+Ratio: 14.846709586982833 mm/pixel
+
 \end{document}
