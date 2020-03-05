@@ -223,6 +223,6 @@ if __name__ == "__main__":
         bgr_mean
     )
     cv2.imwrite(
-        "ex2_bgr_dist.png", 
+        "../output/ex2_bgr_dist.png", 
         img_seg_bgr_dist
     )

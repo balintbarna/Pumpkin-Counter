@@ -4,18 +4,9 @@
 Receiving the segmented and filtered image as described in section \ref{sec:seg}, the task was now counting the pumpkins. Two considered approaches are described in this section. To evaluate the methods qualitatively, found pumpkins are marked with circles in the original image. This method is utilized throughout this section. Furthermore, information regarding the GSD is here described. The code used for section \ref{subsec:algorithms} and \ref{subsec:gsd} is countained in files \url{src/ex3_5.py} and \url{src/ex6.py}, respectively.
 
 \subsection{Counting Algorithms}\label{subsec:algorithms}
-First, the contours were found on the filtered image using openCV's contour detection method. The center point of each contour is extracted and the resulting information along with the original openCV contour is stored in a class \verb+Contours+ found in file \url{src/contours.py}. The found contours were marked with the above mentioned method. The resulting image is seen in figure \ref{fig:contours}.
+First, the contours were found on the filtered image using openCV's contour detection method. The center point of each contour is extracted and the resulting information along with the original openCV contour is stored in a class \verb+Contours+ found in file \url{src/contours.py}. The found contours were marked with the above mentioned method. The resulting image is seen in the file \url{output/ex3_5_marked_contours_all.png}. As can be seen, in some places several contours are found for the same pumpkin yielding too many overlapping contours. An algorithm is needed to sort the contours.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{../Figures/ex3_5_marked_contours_all.png}
-\caption{All found contours marked}
-\label{fig:contours}
-\end{figure}
-
-As can be seen, in some places several contours are found for the same pumpkin yielding too many overlapping contours. An algorithm is needed to sort the contours.
-
-\subsubsection{Sorting Contours by Diameter}
+\subsubsection{Sorting Contours by Diameter}\label{subsubsec:countFast}
 The simplest implemented method simply sorts the contours by diameter. A pumpkin diameter is approximated to be 20 pixels using visual inspection. A loop is implemented that only counts a contour if a contour has not already been counted that has a center point closer than one pumpkin diameter to the said contour. The code is shown below:
 \begin{verbatim}
 counted_pumpkins = []
@@ -39,16 +30,7 @@ counted_pumpkins = []
 
     return len(counted_pumpkins), img
 \end{verbatim}
-An image of the marked counted pumpkins is seen in figure \ref{fig:pumpkinsSimple}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{../Figures/ex3_5_marked_pumpkins_simple.png}
-\caption{Marked pumpkins found by the simple method.}
-\label{fig:pumpkinsSimple}
-\end{figure}
-
-As can be seen, the pumpkins are counted much more correctly than before applying the algorithm. Although the system performs somewhat satisfactory, now the system is prone to missing pumpkins. This might be because the order of counting the pumpkins is more or less arbitrary. If two pumpkins are marked three times total, if the first counted contour is the middle one, the two remaining contours might not be included yielding the two pumpkins only being counted as one. 
+An image of the marked counted pumpkins is seen in the file \url{output/ex3_5_marked_pumpkins_simple}. As can be seen, the pumpkins are counted much more correctly than before applying the algorithm. Although the system performs somewhat satisfactory, now the system is prone to missing pumpkins. This might be because the order of counting the pumpkins is more or less arbitrary. If two pumpkins are marked three times total, if the first counted contour is the middle one, the two remaining contours might not be included yielding the two pumpkins only being counted as one. 
 
 \subsubsection{Sorting Contours with Clustering}
 The hypothesis were that by clustering the obtained contours so that the distance from a contour to its nearest neighbor in the same cluster is maximum the diameter of a pumpkin, the number of pumpkins within a cluster could be estimated by inspecting the average distance for a contour to its nearest neighbor within a cluster. Theoretically, if the said average distance is 0 (or approximately 0), the number of actual pumpkins covered by the contours will be one. Likewise, if the said average distance is equal to a pumpkin diameter, the number of pumpkins covered by the contours is most likely equal to the number of contours in the cluster. As this said average distance would be maximum one pumpkin diameter, as this is the maximum allowed distance within a cluster, the said average distance can be normalized and will thus provide a scalar value to determine the number of contained pumpkins going between 1 pumpkin for average minimum distance 0 and the number of pumpkins equal to the number of contours in the cluster for the average minimum distance equal to a pumpkin diameter.\\
@@ -148,7 +130,7 @@ elif len(self.contours) == 2:
 return int((avg_dist / diameter) * len(self.contours)) + 1
 \end{verbatim}
 \textbf{Evaluation}\\
-An image is generated showing the results. The red circles denote individual contours, the blue circles denote the resulting clusters, and the number next to each cluster is the estimated number of pumpkins contained in the cluster. As the total number of estiamted pumpkins is slightly larger than for the previous simple method, and because of the fact, that the previous method missed some pumpkins, one could be led to believe that this clustering method is more accurate. However, it is indeed also more time consuming.
+An image is generated showing the results and can be seen in the file \url{output/ex3_5_marked_pumpkins_long.png}. The red circles denote individual contours, the blue circles denote the resulting clusters, and the number next to each cluster is the estimated number of pumpkins contained in the cluster. As the total number of estiamted pumpkins is slightly larger than for the previous simple method, and because of the fact, that the previous method missed some pumpkins, one could be led to believe that this clustering method is more accurate. However, it is indeed also more time consuming.
 
 \subsection{GSD}\label{subsec:gsd}
 
