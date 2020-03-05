@@ -1,11 +1,12 @@
 \documentclass[../Head/Main.tex]{subfiles}
 \begin{document}
-\section{Counting Pumpkins}
-exercises 3/5, 6 and 7
+\section{Counting Pumpkins}\label{sec:counting}
+Receiving the segmented and filtered image as described in section \ref{sec:seg}, the task was now counting the pumpkins. Two considered approaches are described in this section. To evaluate the methods qualitatively, a method was developed to mark found pumpkins with circles in the original image. This method is utilized throughout this section. Furthermore, information regarding the GSD is here described. The code used for section \ref{subsec:algorithms} and \ref{subsec:gsd} is countained in files \url{src/ex3_5.py} and \url{src/ex6.py}, respectively.
 
-In this exercise the goal was to use the segmented image to count the number of pumpkins.
+\subsection{Counting Algorithms}\label{subsec:algorithms}
+First, the contours were found on the filtered image using openCV's contour detection method. The found contours were marked with the above mentioned method. The resulting image is seen in figure \ref{fig:contours}.
 
-\subsection{Counting Algorithm}
+
 
 We used openCV's contour detector functions to find closed contours.
 This leaves us with many overlapping results.
@@ -28,7 +29,7 @@ INSERT IMAGE HERE
 
 DRAW CONCLUSION HERE
 
-\subsection{GSD}
+\subsection{GSD}\label{subsec:gsd}
 
 If we try to measure a size on an image, the unit will be in pixels. That is not very useful if we want to get information of pumpkin sizes or number of pumpkins per square meter. To connect image units to physical units, we calculate a GSD ratio in mm/pixel.
 
