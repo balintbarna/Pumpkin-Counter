@@ -1,6 +1,24 @@
 \documentclass[../Head/Main.tex]{subfiles}
 \begin{document}
 \section{Final Product and Discussion}
-exercises 8
+Finally, the resulting code is implemented in the file \url{src/pumpkin_counter.py}. The file is made command line compatible. Assuming the correct Python environment is installed, the system can be used from the command line following the following prototype (executed from the \url{src} folder):
+\begin{verbatim}
+usage: pumpkin_counter.py [-h] [-i I] [-l] [-o O] [-s]
+
+Count pumpkins in a given image.
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -i I        The input image path. If non given, a default path will be used.
+  -l          Long count. Specify to count using the clustering method. Takes
+              longer time.
+  -o O        Output image path. If specified, will store an image with the
+              counted pumpkins marked at this location.
+  -s          If specified, no loading bar will be shown.
+\end{verbatim}
+The program can be configured from the file \url{src/config.json}.
+\subsection{Results and Discussion}
+The results of the system are deemed adequate. The system exposes two methods for counting the pumpkins, and though the accuracy of the most advanced method might be slightly better, it takes longer time than would be expected from such a system.\\
+For a farmer to take the system into usage, some more experimentation with the techniques in the beginning of the pipeline might be in place so as to optimize the locations of the contours before a counting algorithm is applied. This would result in a more precise pumpkin count estimate. Furthermore, it is doubtful that a pumpkin farmer would find it easy to utilize the software as is, as it is presented as a command line utility that requires the correct Python environment to be installed, and is developed for Linux. However, the results could be used to get a somewhat accurate estimate of the number of pumpkins in the field.
 
 \end{document}

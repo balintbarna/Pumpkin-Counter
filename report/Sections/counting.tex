@@ -52,29 +52,103 @@ As can be seen, the pumpkins are counted much more correctly than before applyin
 
 \subsubsection{Sorting Contours with Clustering}
 The hypothesis were that by clustering the obtained contours so that the distance from a contour to its nearest neighbor in the same cluster is maximum the diameter of a pumpkin, the number of pumpkins within a cluster could be estimated by inspecting the average distance for a contour to its nearest neighbor within a cluster. Theoretically, if the said average distance is 0 (or approximately 0), the number of actual pumpkins covered by the contours will be one. Likewise, if the said average distance is equal to a pumpkin diameter, the number of pumpkins covered by the contours is most likely equal to the number of contours in the cluster. As this said average distance would be maximum one pumpkin diameter, as this is the maximum allowed distance within a cluster, the said average distance can be normalized and will thus provide a scalar value to determine the number of contained pumpkins going between 1 pumpkin for average minimum distance 0 and the number of pumpkins equal to the number of contours in the cluster for the average minimum distance equal to a pumpkin diameter.\\
-A class \verb+ContourCluster+ is implemented in file \url{
+A class \verb+ContourCluster+ is implemented in file \url{src/contours.py}. The class contains a list of \verb+Contour+ objects as well as methods to determine the distance between two \verb+ContourCluster+ objects and for getting information about a circle encompassing the cluster. In the same file, a method is implemented for clustering contours. The method for clustering the contours follow standard agglomerative hierarchical clustering with stopping at a distance equal to the pumpkin diameter. The distance metric is Euclidean, measured from the center of each contour, and the distance between clusters are measured by the minimum distance between contours in each cluster as the minimum distance is what is of interest, as explained above.\par
+\textbf{Clustering the Contours}\\
+For clustering the contours, first a distance matrix is created:
+\begin{verbatim}
+distance_matrix = np.zeros((len(contour_clusters), len(contour_clusters)))
 
+print("Creating distance matrix")
+for i in tqdm(range(len(contour_clusters))):
+    for j in range(len(contour_clusters)):
+        if (j < i):
+            distance_matrix[i, j] = contour_clusters[i].distance_to_cluster(contour_clusters[j])
+        else:
+            distance_matrix[i, j] = np.inf
+\end{verbatim}
+Then, looping until the distance becomes greater than a pumpkin diameter, the following loop is executed:
+\begin{enumerate}
+\item The minimum distance in the distance matrix is found and evaluated:
+\begin{verbatim}
+(i, j) = np.unravel_index(
+	distance_matrix.argmin(),
+    distance_matrix.shape
+)
 
-We used openCV's contour detector functions to find closed contours.
-This leaves us with many overlapping results.
+distance = distance_matrix[i, j]
+print("Distance is " + str(distance) + " pixels")
 
-We need to find a criteria or a method to filter the undesirable matches. A simple method we tried was to use the average pumpkin diameter and disregard those mathes that have a distance to a unique match less than the average diameter.
+if (distance > max_cluster_distance):
+	break
+\end{verbatim}
+\item The two clusters with the found minimum distance is merged:
+\begin{verbatim}
+merged_cluster = contour_clusters.pop(i).merge(contour_clusters.pop(j))
+contour_clusters.append(merged_cluster)
+\end{verbatim}
+\item And finally, the distance matrix is updated:
+\begin{verbatim}
+distance_matrix = np.delete(
+            distance_matrix,
+            i,
+            axis = 1
+        )
+        distance_matrix = np.delete(
+            distance_matrix,
+            j,
+            axis = 1
+        )
+        row_i = distance_matrix[i, :]
+        distance_matrix = np.delete(
+            distance_matrix,
+            i,
+            axis = 0
+        )
+        row_j = distance_matrix[j, :]
+        distance_matrix = np.delete(
+            distance_matrix,
+            j,
+            axis = 0
+        )
 
-INSERT IMAGE HERE
+        new_column = np.full(
+            len(contour_clusters),
+            np.inf
+        )
+        new_row = np.minimum(
+            row_i,
+            row_j
+        )
 
-This method disregards a lot of real matches, and also leaves some false double matches on large targets.
+        distance_matrix_temp = np.zeros((len(contour_clusters), len(contour_clusters)))
 
-The next method we tried is clustering based on a hierarchical search. The algorithm stops when the shortest distance between two clusters is more than the usual pumpkin diameter. Resulst can be seen on
+        distance_matrix_temp[:-1, :-1] = distance_matrix
+        distance_matrix_temp[-1, :-1] = new_row
+        distance_matrix_temp[:, -1] = new_column
 
-INSERT IMAGE HERE
+        distance_matrix = distance_matrix_temp
+\end{verbatim}
+\end{enumerate}
+When exiting, the method returns the list of resulting clusters.\par
+\textbf{Estimating the Number of Pumpkins in a Cluster}\\
+When the contours are clustered, the estimated total number of pumpkins is the sum of the estimated number of pumpkins in each cluster. The number of pumpkins in a cluster is estimated as explained above, but with taking into account cluster containing only one or two contours as seen below:
+\begin{verbatim}
+avg_dist = 0
 
-DRAW CONCLUSION ABOUT DIFFERENCES BETWEEN THE TWO METHODS
+if len(self.contours) > 2:
+	for i in range(len(self.contours)):
+    	avg_dist += min(
+        	range(len(self.contours)),
+            key = lambda j: self.contours[i].distance_to(self.contours[j])
+        )
+		avg_dist /= len(self.contours)
+elif len(self.contours) == 2:
+	avg_dist = self.contours[0].distance_to(self.contours[1])
 
-The segmentation is not that accurate on the original image. The cause of this inaccuracy can be random noise or even occluding objects like weeds or bugs. To correct for this error, we used the filter from the previous exercise and analysed the performance difference.
-
-INSERT IMAGE HERE
-
-DRAW CONCLUSION HERE
+return int((avg_dist / diameter) * len(self.contours)) + 1
+\end{verbatim}
+\textbf{Evaluation}\\
+An image is generated showing the results. The red circles denote individual contours, the blue circles denote the resulting clusters, and the number next to each cluster is the estimated number of pumpkins contained in the cluster. As the total number of estiamted pumpkins is slightly larger than for the previous simple method, and because of the fact, that the previous method missed some pumpkins, one could be led to believe that this clustering method is more accurate. However, it is indeed also more time consuming.
 
 \subsection{GSD}\label{subsec:gsd}
 

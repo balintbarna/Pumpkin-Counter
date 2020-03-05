@@ -14,6 +14,8 @@ import numpy as np
 from math import sqrt #, inf
 inf = float('inf')
 
+from tqdm import tqdm
+
 ###############################################################
 # Classes
 
@@ -109,7 +111,10 @@ class ContourCluster:
         self.contours = self.contours + other.contours
         return self
 
-    def get_circle(self):
+    def get_circle(
+        self,
+        pumpkin_diameter
+    ):
         avg_center = [0, 0]
         for cnt in self.contours:
             avg_center[0] += cnt.center[0]
@@ -121,7 +126,13 @@ class ContourCluster:
         for cnt in self.contours:
             max_radius = int(min([max_radius, cnt.distance_to(other_center=avg_center)]))
 
-        return avg_center, max_radius
+        circle_radius = 0
+        if max_radius == 0:
+            circle_radius = pumpkin_diameter
+        else:
+            circle_radius = max_radius * 2
+
+        return avg_center, circle_radius
 
     def contained_pumpkins_estimate(
         self,
@@ -140,3 +151,84 @@ class ContourCluster:
             avg_dist = self.contours[0].distance_to(self.contours[1])
 
         return int((avg_dist / diameter) * len(self.contours)) + 1
+
+def cluster_contours(
+    contours,
+    pumpkin_diameter
+):
+    max_cluster_distance = pumpkin_diameter
+
+    contour_clusters = []
+    for cnt in contours:
+        contour_clusters.append(ContourCluster(cnt))
+
+    distance_matrix = np.zeros((len(contour_clusters), len(contour_clusters)))
+
+    print("Creating distance matrix")
+    for i in tqdm(range(len(contour_clusters))):
+        for j in range(len(contour_clusters)):
+            if (j < i):
+                distance_matrix[i, j] = contour_clusters[i].distance_to_cluster(contour_clusters[j])
+            else:
+                distance_matrix[i, j] = np.inf
+
+    counter = 0
+    print("Clustering contours")
+    while True:
+        print("At number " + str(counter + 1) + " out of " + str(len(contour_clusters)) + " remaining clusters.")
+        counter += 1
+        (i, j) = np.unravel_index(
+            distance_matrix.argmin(),
+            distance_matrix.shape
+        )
+
+        distance = distance_matrix[i, j]
+        print("Distance is " + str(distance) + " pixels")
+
+        if (distance > max_cluster_distance):
+            break
+
+        merged_cluster = contour_clusters.pop(i).merge(contour_clusters.pop(j))
+        contour_clusters.append(merged_cluster)
+
+        distance_matrix = np.delete(
+            distance_matrix,
+            i,
+            axis = 1
+        )
+        distance_matrix = np.delete(
+            distance_matrix,
+            j,
+            axis = 1
+        )
+        row_i = distance_matrix[i, :]
+        distance_matrix = np.delete(
+            distance_matrix,
+            i,
+            axis = 0
+        )
+        row_j = distance_matrix[j, :]
+        distance_matrix = np.delete(
+            distance_matrix,
+            j,
+            axis = 0
+        )
+
+        new_column = np.full(
+            len(contour_clusters),
+            np.inf
+        )
+        new_row = np.minimum(
+            row_i,
+            row_j
+        )
+
+        distance_matrix_temp = np.zeros((len(contour_clusters), len(contour_clusters)))
+
+        distance_matrix_temp[:-1, :-1] = distance_matrix
+        distance_matrix_temp[-1, :-1] = new_row
+        distance_matrix_temp[:, -1] = new_column
+
+        distance_matrix = distance_matrix_temp
+
+    return contour_clusters

@@ -26,6 +26,7 @@ def median(img, ksize):
 
 if __name__ == '__main__':
     img = cv2.imread("ex2_bgr_inrange.png")
-    blurred = median(img, 9)
 
-    cv2.imwrite("blurred.png", blurred)
+    blurred = median(img, 5)
+    
+    cv2.imwrite("../output/ex4_blurred.png", blurred)

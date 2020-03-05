@@ -19,7 +19,7 @@ import argparse
 from copy import deepcopy
 from tqdm import tqdm
 
-from contours import Contour, ContourCluster
+from contours import Contour, ContourCluster, cluster_contours
 from config_loader import load_config
 
 ###############################################################
@@ -58,8 +58,8 @@ class PumpkinCounter():
             )
         )
 
-        self.filtered_img = self._median(
-            self.seg_img,
+        self.filtered_img = cv2.medianBlur(
+            self.seg_img, 
             self.config['filter_ksize']
         )
 
@@ -107,7 +107,10 @@ class PumpkinCounter():
         self,
         marked_img_filename=None
     ):
-        clusters = self._cluster_contours()
+        clusters = cluster_contours(
+            self.contours,
+            self.config['pumpkin_diameter']
+        )
 
         if marked_img_filename != None:
             self.img_marked_long = deepcopy(self.img)

@@ -1,5 +1,5 @@
 {
-	"img_filename": "../input/DJI_0237.JPG", 
+	"img_filename": "../input/DJI_0240.JPG", 
 	"bgr_properties": 
 	{
 		"b_mean": 41, 
@@ -22,6 +22,6 @@
 		"lowerb_stdev_scalar": 1,
 		"upperb_stdev_scalar": 2
 	},
-	"pumpkin_diameter": 15,
-	"filter_ksize": 3
+	"pumpkin_diameter": 20,
+	"filter_ksize": 5
 }

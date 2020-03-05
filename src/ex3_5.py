@@ -19,42 +19,120 @@ from tqdm import tqdm
 import cv2
 import numpy as np
 
-import ex2
-from ex4 import median
-from ex7 import highlight_contours
 from config_loader import load_config
+from contours import Contour, ContourCluster, cluster_contours
+from ex2 import segment_bgr, calc_lowerb, calc_upperb
+from ex4 import median
 
 ###############################################################
 # Methods
 
-# def find_pumpkins(thresh_img, pumpkin_diameter):
-#     """
-#         Returns contours of pumpkins given a thresholded image of the pumpkins.
-#         Filters contours by closenes, so pumpkins aren't counted twice.
-#     """
-#     _, cnts, _ = cv2.findContours(thresh_img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+def count_pumpkins_simple(
+    img,
+    contours,
+    pumpkin_diameter
+):
+    img = deepcopy(img)
 
-#     return contour_clustering(
-#         cnts,
-#         pumpkin_diameter
-#     )
+    counted_pumpkins = []
 
-# def highlight_contours(
-#     img, 
-#     cnts, 
-#     color, 
-#     pumpkin_diameter
-# ):
-#     img = deepcopy(img)
+    for cnt in tqdm(contours):
+        is_unique = True
+        for ccnt in counted_pumpkins:
+            if (cnt.distance_to(ccnt) < pumpkin_diameter):
+                is_unique = False
+                break
 
-#     for c in cnts:
-#         img = cv2.circle(img, 
-#         tuple(c.center), 
-#         int(pumpkin_diameter / 2), 
-#         color, 
-#         1)
+        if is_unique:
+            counted_pumpkins.append(cnt)
+            img = cv2.circle(
+                img, 
+                tuple(cnt.center), 
+                int(pumpkin_diameter / 2), 
+                (255, 0, 0), 
+                1)
 
-#     return img
+    return len(counted_pumpkins), img
+
+def get_contours(filtered_img):
+    _, cv2_cnts, _ = cv2.findContours(
+        filtered_img, 
+        cv2.RETR_TREE, 
+        cv2.CHAIN_APPROX_SIMPLE
+    )
+
+    cnts = []
+
+    for cnt in cv2_cnts:
+        try:
+            cnts.append(Contour(cnt))
+        except Exception:
+            pass
+
+    return cnts
+
+def mark_contours(
+    img,
+    contours,
+    diameter
+):
+    img = deepcopy(img)
+
+    for cnt in contours:
+        img = cv2.circle(
+            img, 
+            tuple(cnt.center), 
+            int(diameter / 2), 
+            (255, 0, 0), 
+            1)
+
+    return img
+
+def count_pumpkins_long(
+    img,
+    contours,
+    pumpkin_diameter
+):
+    clusters = cluster_contours(
+        contours,
+        pumpkin_diameter
+    )
+
+    img_marked_long = deepcopy(img)
+
+    n_pumpkins_estimate = 0
+
+    for cl in clusters:
+        n_pumpkins_estimate += cl.contained_pumpkins_estimate(pumpkin_diameter)
+
+        center, radius = cl.get_circle(pumpkin_diameter)
+        img_marked_long = cv2.circle(
+            img_marked_long, 
+            tuple(center), 
+            radius, 
+            (255, 0, 0), 
+            1
+        )
+        img_marked_long = cv2.putText(
+            img_marked_long, 
+            str(cl.contained_pumpkins_estimate(pumpkin_diameter)), 
+            tuple(center), 
+            cv2.FONT_HERSHEY_SIMPLEX, 
+            1, 
+            (0, 0, 0),
+            thickness=3
+        )
+
+        for cnt in cl.contours:
+            img_marked_long = cv2.circle(
+                img_marked_long, 
+                tuple(cnt.center), 
+                int(pumpkin_diameter / 2), 
+                (0, 0, 255), 
+                1)
+
+    return n_pumpkins_estimate, img_marked_long
+
 
 
 ###############################################################
@@ -63,71 +141,70 @@ from config_loader import load_config
 if __name__ == "__main__":
     config = load_config()
 
-    img = cv2.imread(config['img_filename'])
+    img = cv2.imread("../input/DJI_0240.JPG")
 
     bgr_props = config['bgr_properties']
     bgr_mean = (bgr_props['b_mean'], bgr_props['g_mean'], bgr_props['r_mean'])
     bgr_stdev = (bgr_props['b_stdev'], bgr_props['g_stdev'], bgr_props['r_stdev'])
-
-    seg_img = ex2.segment_bgr(
+    
+    # BGR segmentation
+    img_seg_bgr = segment_bgr(
         img, 
-        ex2.calc_lowerb(
+        calc_lowerb(
             bgr_mean, 
             bgr_stdev, 
             bgr_props['lowerb_stdev_scalar']
-        ), ex2.calc_upperb(
+        ), calc_upperb(
             bgr_mean, 
             bgr_stdev, 
-            bgr_props['upperb_stdev_scalar'])
+            bgr_props['upperb_stdev_scalar']
         )
+    )
 
-    # thresh_img = cv2.adaptiveThreshold(seg_img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)
+    # Filtering
+    img_blur = cv2.medianBlur(img_seg_bgr, 5)
 
-    # cv2.imwrite("test.png", seg_img)
+    # Obtaining contours
+    contours = get_contours(img_blur)
 
-    # filtered_img = median(seg_img, 3)
+    marked_contours = mark_contours(
+        img,
+        contours,
+        config['pumpkin_diameter']
+    )
 
-    # pumpkin_dia = 20
+    cv2.imwrite(
+        "../output/ex3_5_marked_contours_all.png",
+        marked_contours
+    )
 
-    # cnt_clusters, distance_matrix = find_pumpkins(filtered_img, pumpkin_dia)
+    # Counting pumpkins simple
+    n_pumpkins_simple, marked_pumpkins_simple = count_pumpkins_simple(
+        img,
+        contours,
+        config['pumpkin_diameter']
+    )
 
-    # print("Drawing")
-    # for cl in cnt_clusters:
-    #     center, radius = cl.get_circle()
-    #     img = cv2.circle(img, 
-    #     tuple(center), 
-    #     radius, 
-    #     (255, 0, 0), 
-    #     1)
-    #     img = cv2.putText(img, str(cl.contained_pumpkins_estimate(pumpkin_dia)), tuple(center), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0))
+    print("Number of pumpkins from simple counting method: " + str(n_pumpkins_simple))
 
-    #     for cnt in cl.contours:
-    #         img = cv2.circle(img, 
-    #             tuple(cnt.center), 
-    #             int(pumpkin_dia / 2), 
-    #             (0, 0, 255), 
-    #             1)
+    cv2.imwrite(
+        "../output/ex3_5_marked_pumpkins_simple.png",
+        marked_pumpkins_simple
+    )
 
-    # cv2.imwrite("cluster_and_contours.png", img)
+    # Counting pumpkins long
+    n_pumpkins_long, marked_pumpkins_long = count_pumpkins_long(
+        img,
+        contours,
+        config['pumpkin_diameter']
+    )
 
-    # distance_matrix = distance_matrix.flatten()
-    # distance_matrix = np.sort(distance_matrix)
-    # distance_matrix = np.flip(distance_matrix)
+    print("Number of pumpkins from long counting method: " + str(n_pumpkins_long))
 
-    # for d in distance_matrix:
-        # print(d)
-
-    # img_cl = draw_pumpkin_clustering(img, cnts)
-    # # img_cp = draw_pumpkin_clustering(img, cnts_cp)
-
-    # img_cl = highlight_contours(img_cl, cnts, (255, 0, 0), pumpkin_dia)
-    # # img_cp = highlight_contours(img_cp, cnts_cp, (255, 0, 0), pumpkin_dia)
-
-    # cv2.imwrite("clustered.png", img_cl)
-    # # cv2.imwrite("clustered_cp.png", img_cp)
-
-    # # cv2.imwrite("marked_2.png", marked_img)
-
+    cv2.imwrite(
+        "../output/ex3_5_marked_pumpkins_long.png",
+        marked_pumpkins_long
+    )
 
 
 
