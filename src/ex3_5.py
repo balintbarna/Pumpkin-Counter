@@ -27,26 +27,6 @@ from config_loader import load_config
 ###############################################################
 # Methods
 
-# def draw_pumpkin_clustering(
-#     img,
-#     cluster_sorted_contours
-# ):
-#     img_cp = deepcopy(img)
-    
-#     curr_xy = [0, 0]
-
-#     for cnt in tqdm(cluster_sorted_contours):
-#         img_cp = cv2.line(
-#             img,
-#             tuple(curr_xy),
-#             tuple(cnt.center),
-#             (0, 0, 255),
-#             2)
-        
-#         curr_xy = cnt.center
-
-#     return img_cp
-
 # def find_pumpkins(thresh_img, pumpkin_diameter):
 #     """
 #         Returns contours of pumpkins given a thresholded image of the pumpkins.

@@ -10,7 +10,7 @@
 # Imports
 
 import cv2
-import constants as cn
+# import constants as cn
 
 ###############################################################
 # Methods
@@ -25,5 +25,7 @@ def median(img, ksize):
 # Main
 
 if __name__ == '__main__':
-    blurred = median(cn.original_img, 9)
-    cv2.imwrite("output/blurred.jpg", blurred)
+    img = cv2.imread("ex2_bgr_inrange.png")
+    blurred = median(img, 9)
+
+    cv2.imwrite("blurred.png", blurred)

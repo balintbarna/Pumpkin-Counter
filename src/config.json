@@ -13,15 +13,15 @@
 	}, 
 	"lab_properties": 
 	{
-		"l_mean": 1, 
-		"a_mean": 1, 
-		"b_mean": 1,
-		"l_stdev": 1,
-		"a_stdev": 1,
-		"b_stdev": 1,
+		"l_mean": 120, 
+		"a_mean": 149, 
+		"b_mean": 171,
+		"l_stdev": 33.5,
+		"a_stdev": 7.1,
+		"b_stdev": 11.6,
 		"lowerb_stdev_scalar": 1,
 		"upperb_stdev_scalar": 2
 	},
-	"pumpkin_diameter": 10,
-	"filter_ksize": 5
+	"pumpkin_diameter": 15,
+	"filter_ksize": 3
 }

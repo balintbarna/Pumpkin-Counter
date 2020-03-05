@@ -92,7 +92,7 @@ class PumpkinCounter():
                         self.img_marked_fast, 
                         tuple(cnt.center), 
                         int(self.config['pumpkin_diameter'] / 2), 
-                        (0, 0, 255), 
+                        (255, 0, 0), 
                         1)
 
         if marked_img_filename != None:
@@ -356,8 +356,8 @@ if __name__ == "__main__":
         if args.o != None:
             n_pumpkins = pc.count_pumpkins_long(args.o)
             cv2.imwrite(
-                pc.img_marked_long,
-                args.o
+                args.o,
+                pc.img_marked_long
             )
         else:
             n_pumpkins = pc.count_pumpkins_long()
@@ -365,8 +365,8 @@ if __name__ == "__main__":
         if args.o != None:
             n_pumpkins = pc.count_pumpkins_fast(args.o)
             cv2.imwrite(
-                pc.img_marked_fast,
-                args.o
+                args.o,
+                pc.img_marked_fast                
             )
         else:
             n_pumpkins = pc.count_pumpkins_fast()
