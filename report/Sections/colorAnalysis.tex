@@ -6,27 +6,96 @@
 If a person was told to count pumpkins in an image, that would be a straigt forward procedure if that person know how a pumpkin looks like.\\
 Humans generally have prior knowledge about what pumpkins look like and can use that information to distinguish between them and other objects or the background.
 A computer does not have that kind of knowledge, and that is one of the major difficulties of computer vision.\par
-This sections described how the computer can be givin some prior knowledge about the characteristics of a pumpkin. 
+This sections described how the computer can be givin some prior knowledge about the characteristics of a pumpkin.\\
+Using this fact, one of the easiest ways to utilize computer vision for separating the pumpkins from the background is by color information.\\
+This was done by manually annotating pumkinks in one of the images by hand, and then draw the colour information from pixels containing pumkings. Colour information will be drawn from the image using two different colour spaces RGB and CIELab where mean and standard deviation of all channels will be found including a hisogram of the annotated pumpkins. The pumpkings where annotated by using GIMP to create a mask of where the pumpkins where in the image DJI\_0240.JPG. This annotated image can be seen in figure \ref{fig:ann_pump}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{../../output/ex1/DJI_0240_full_masked.png}
+	\caption{Image DJI\_0240.JPG with annotated pumpkins}
+	\label{fig:ann_pump}
+\end{figure}
 
-Using this fact, one of the easiest ways to utilize computer vision for separating the pumpkins from the background is by color information.
-To learn pumpkin colors, we are annotating pumpkins on the image by hand, removing everything else from the image, and checking the three-channel histograms for the annotated parts.
-The goal is to know the color mean and standard deviation of pumpkins.
+In figure \ref{fig:rgb_hist} the RGB histograms for both the entire image and the annotated pumpkins can be seen. It can be seen that the pumpkins have higher values in the red and green channels when compared to the histogram of the overall image. The blue channel however seems to be very close to the overall image.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../output/ex1/DJI_0240_full_rgb_histogram.png}
+		\caption{RGB histogram for the entire image DJI\_0240.JPG}
+		\label{fig:rgb_hist_full}	
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../output/ex1/DJI_0240_full_rgb_histogram_masked.png}
+		\caption{RGB histogram for the annotated pumpkins in image DJI\_0240.JPG}
+		\label{fig:rgb_hist_masked}
+	\end{subfigure}
+	\caption{RGB histograms for both the entire image and the annotated pumpkins for the image DJI\_0240.JPG}
+	\label{fig:rgb_hist}
+\end{figure}
 
-
-The same roughly applies for computer vision, but one of the major difficulties of computer vision is the lack of general knowledge
-
-
-That is one of the major difficulties of computer vision. Humans have a large knowledge of the world where as computer systems does not
-
-
-
+In figure \ref{fig:cielab_hist} the CIELab histograms for both the entire image and the annotated pumpkins can be seen. It is clear that the lightness of the pixels are greater for the pumpkins than for the background. The pumpkins colours seems to be shifted towards red and yellow whereas the histograms for the entire image show colours slightly shifted towards green and blue.
 
 \begin{figure}[H]
 	\centering
-	\scalebox{0.9}{
-	\subfile{../Figures/Pumpking_color.tex}}
-	\caption{Nice capt}
-	\label{fig:color_mean}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../output/ex1/DJI_0240_full_CIELab_histogram.png}
+		\caption{CIELab histogram for the entire image DJI\_0240.JPG}
+		\label{fig:cielab_hist_full}
+	\end{subfigure}
+	\begin{subfigure}{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../../output/ex1/DJI_0240_full_CIELab_histogram_masked.png}
+		\caption{CIELab histogram for the annotated pumpkins in image DJI\_0240.JPG}
+		\label{fig:cielab_hist_masked}
+	\end{subfigure}
+	\caption{CIELab histograms for both the entire image and the annotated pumpkins for the image DJI\_0240.JPG}
+	\label{fig:cielab_hist}
 \end{figure}
+
+In table \ref{tab:mean_stdiv_rgb} and \ref{tab:mean_stdiv_cielab} the found mean and standard deviations for both RGB and CIELab can be seen.\par 
+\begin{minipage}{0.49\textwidth}
+	\centering
+	\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+      & Mean   & Standard Deviation \\
+Red   & 160.89 & 39.18              \\
+Green & 96.99  & 33.01              \\
+Blue  & 36.47  & 17.79             
+\end{tabular}
+\caption{Mean and standard deviation for RGB}
+\label{tab:mean_stdiv_rgb}
+\end{table}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+	\centering
+	\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+  & Mean   & Standard Deviation \\
+L & 120.26 & 33.55              \\
+a & 149.03  & 7.14              \\
+b & 171.09  & 11.55             
+\end{tabular}
+\caption{Mean and standard deviation for CIELab}
+\label{tab:mean_stdiv_cielab}
+\end{table}
+\end{minipage}
+
+
+
+
+
+
+%\begin{figure}[H]
+%	\centering
+%	\scalebox{0.9}{
+%	\subfile{../Figures/Pumpking_color.tex}}
+%	\caption{Nice capt}
+%	\label{fig:color_mean}
+%\end{figure}
 
 \end{document}
