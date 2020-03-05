@@ -1,40 +1,40 @@
 \documentclass[../Head/Main.tex]{subfiles}
 \begin{document}
 \section{Counting Pumpkins}\label{sec:counting}
-Receiving the segmented and filtered image as described in section \ref{sec:seg}, the task was now counting the pumpkins. Two considered approaches are described in this section. To evaluate the methods qualitatively, found pumpkins are marked with circles in the original image. This method is utilized throughout this section. Furthermore, information regarding the GSD is here described. The code used for section \ref{subsec:algorithms} and \ref{subsec:gsd} is countained in files \url{src/ex3_5.py} and \url{src/ex6.py}, respectively.
+Receiving the segmented and filtered image as described in section \ref{sec:seg}, the task was now to count the pumpkins. Two considered approaches are described in this section. To evaluate the methods qualitatively, found pumpkins are marked with circles in the original image. This method is utilized throughout this section. Furthermore, information regarding the GSD is here described. The code used for section \ref{subsec:algorithms} and \ref{subsec:gsd} is countained in files \url{src/ex3_5.py} and \url{src/ex6.py}, respectively.
 
 \subsection{Counting Algorithms}\label{subsec:algorithms}
-First, the contours were found on the filtered image using openCV's contour detection method. The center point of each contour is extracted and the resulting information along with the original openCV contour is stored in a class \verb+Contours+ found in file \url{src/contours.py}. The found contours were marked with the above mentioned method. The resulting image is seen in the file \url{output/ex3_5_marked_contours_all.png}. As can be seen, in some places several contours are found for the same pumpkin yielding too many overlapping contours. An algorithm is needed to sort the contours.
+First, the contours were found on the filtered image using openCV's contour detection method. The center point of each contour was extracted and the resulting information along with the original openCV contour was stored in a class \verb+Contours+ found in file \url{src/contours.py}. The found contours were marked with the above mentioned method. The resulting image is seen in the file \url{output/ex3_5_marked_contours_all.png}. As can be seen, in some places several contours are found for the same pumpkin yielding too many overlapping contours. An algorithm is needed to sort the contours.
 
 \subsubsection{Sorting Contours by Diameter}\label{subsubsec:countFast}
 The simplest implemented method simply sorts the contours by diameter. A pumpkin diameter is approximated to be 20 pixels using visual inspection. A loop is implemented that only counts a contour if a contour has not already been counted that has a center point closer than one pumpkin diameter to the said contour. The code is shown below:
 \begin{verbatim}
 counted_pumpkins = []
 
-    for cnt in tqdm(contours):
-        is_unique = True
-        for ccnt in counted_pumpkins:
-            if (cnt.distance_to(ccnt) < pumpkin_diameter):
-                is_unique = False
-                break
+for cnt in tqdm(contours):
+	is_unique = True
+    for ccnt in counted_pumpkins:
+    	if (cnt.distance_to(ccnt) < pumpkin_diameter):
+        	is_unique = False
+            break
 
-        if is_unique:
-            counted_pumpkins.append(cnt)
-            img = cv2.circle(
-                img, 
-                tuple(cnt.center), 
-                int(pumpkin_diameter / 2), 
-                (255, 0, 0), 
-                1
-            )
+    if is_unique:
+        counted_pumpkins.append(cnt)
+        img = cv2.circle(
+        	img, 
+            tuple(cnt.center), 
+            int(pumpkin_diameter / 2), 
+            (255, 0, 0), 
+            1
+       	)
 
-    return len(counted_pumpkins), img
+return len(counted_pumpkins), img
 \end{verbatim}
-An image of the marked counted pumpkins is seen in the file \url{output/ex3_5_marked_pumpkins_simple}. As can be seen, the pumpkins are counted much more correctly than before applying the algorithm. Although the system performs somewhat satisfactory, now the system is prone to missing pumpkins. This might be because the order of counting the pumpkins is more or less arbitrary. If two pumpkins are marked three times total, if the first counted contour is the middle one, the two remaining contours might not be included yielding the two pumpkins only being counted as one. 
+An image of the marked counted pumpkins can be seen in the file \url{output/ex3_5_marked_pumpkins_simple}. As seen, the pumpkins are counted much more correctly than before applying the algorithm. Although the system performs somewhat satisfactory, now the system is prone to missing pumpkins. This might be because the order of counting the pumpkins is more or less arbitrary. If two pumpkins are marked three times total, if the first counted contour is the middle one, the two remaining contours might not be included yielding the two pumpkins only being counted as one. 
 
 \subsubsection{Sorting Contours with Clustering}
 The hypothesis were that by clustering the obtained contours so that the distance from a contour to its nearest neighbor in the same cluster is maximum the diameter of a pumpkin, the number of pumpkins within a cluster could be estimated by inspecting the average distance for a contour to its nearest neighbor within a cluster. Theoretically, if the said average distance is 0 (or approximately 0), the number of actual pumpkins covered by the contours will be one. Likewise, if the said average distance is equal to a pumpkin diameter, the number of pumpkins covered by the contours is most likely equal to the number of contours in the cluster. As this said average distance would be maximum one pumpkin diameter, as this is the maximum allowed distance within a cluster, the said average distance can be normalized and will thus provide a scalar value to determine the number of contained pumpkins going between 1 pumpkin for average minimum distance 0 and the number of pumpkins equal to the number of contours in the cluster for the average minimum distance equal to a pumpkin diameter.\\
-A class \verb+ContourCluster+ is implemented in file \url{src/contours.py}. The class contains a list of \verb+Contour+ objects as well as methods to determine the distance between two \verb+ContourCluster+ objects and for getting information about a circle encompassing the cluster. In the same file, a method is implemented for clustering contours. The method for clustering the contours follow standard agglomerative hierarchical clustering with stopping at a distance equal to the pumpkin diameter. The distance metric is Euclidean, measured from the center of each contour, and the distance between clusters are measured by the minimum distance between contours in each cluster as the minimum distance is what is of interest, as explained above.\par
+A class \verb+ContourCluster+ is implemented in file \url{src/contours.py}. The class contains a list of \verb+Contour+ objects as well as methods to determine the distance between two \verb+ContourCluster+ objects and for getting information about a circle encompassing the cluster. In the same file, a method is implemented for clustering contours. The method for clustering the contours follow a standard agglomerative hierarchical clustering method with stopping at a distance equal to the pumpkin diameter. The distance metric is Euclidean, measured from the center of each contour, and the distance between clusters are measured by the minimum distance between contours in each cluster as the minimum distance is what is of interest, as explained above.\par
 \textbf{Clustering the Contours}\\
 For clustering the contours, first a distance matrix is created:
 \begin{verbatim}
@@ -53,7 +53,7 @@ Then, looping until the distance becomes greater than a pumpkin diameter, the fo
 \item The minimum distance in the distance matrix is found and evaluated:
 \begin{verbatim}
 (i, j) = np.unravel_index(
-	distance_matrix.argmin(),
+    distance_matrix.argmin(),
     distance_matrix.shape
 )
 
@@ -61,7 +61,7 @@ distance = distance_matrix[i, j]
 print("Distance is " + str(distance) + " pixels")
 
 if (distance > max_cluster_distance):
-	break
+    break
 \end{verbatim}
 \item The two clusters with the found minimum distance is merged:
 \begin{verbatim}
@@ -71,66 +71,66 @@ contour_clusters.append(merged_cluster)
 \item And finally, the distance matrix is updated:
 \begin{verbatim}
 distance_matrix = np.delete(
-            distance_matrix,
-            i,
-            axis = 1
-        )
-        distance_matrix = np.delete(
-            distance_matrix,
-            j,
-            axis = 1
-        )
-        row_i = distance_matrix[i, :]
-        distance_matrix = np.delete(
-            distance_matrix,
-            i,
-            axis = 0
-        )
-        row_j = distance_matrix[j, :]
-        distance_matrix = np.delete(
-            distance_matrix,
-            j,
-            axis = 0
-        )
+    distance_matrix,
+    i,
+    axis = 1
+)
+distance_matrix = np.delete(
+    distance_matrix,
+    j,
+    axis = 1
+)
+row_i = distance_matrix[i, :]
+distance_matrix = np.delete(
+    distance_matrix,
+    i,
+    axis = 0
+)
+row_j = distance_matrix[j, :]
+distance_matrix = np.delete(
+    distance_matrix,
+    j,
+    axis = 0
+)
 
-        new_column = np.full(
-            len(contour_clusters),
-            np.inf
-        )
-        new_row = np.minimum(
-            row_i,
-            row_j
-        )
+new_column = np.full(
+    len(contour_clusters),
+    np.inf
+)
+new_row = np.minimum(
+    row_i,
+    row_j
+)
 
-        distance_matrix_temp = np.zeros((len(contour_clusters), len(contour_clusters)))
+distance_matrix_temp = np.zeros((len(contour_clusters, len(contour_clusters)))
 
-        distance_matrix_temp[:-1, :-1] = distance_matrix
-        distance_matrix_temp[-1, :-1] = new_row
-        distance_matrix_temp[:, -1] = new_column
+distance_matrix_temp[:-1, :-1] = distance_matrix
+distance_matrix_temp[-1, :-1] = new_row
+distance_matrix_temp[:, -1] = new_column
 
-        distance_matrix = distance_matrix_temp
+distance_matrix = distance_matrix_temp
 \end{verbatim}
 \end{enumerate}
-When exiting, the method returns the list of resulting clusters.\par
+When exiting, the method returns the list the of resulting clusters.\par
 \textbf{Estimating the Number of Pumpkins in a Cluster}\\
-When the contours are clustered, the estimated total number of pumpkins is the sum of the estimated number of pumpkins in each cluster. The number of pumpkins in a cluster is estimated as explained above, but with taking into account cluster containing only one or two contours as seen below:
+When the contours have been clustered, the estimated total number of pumpkins is the sum of the estimated number of pumpkins in each cluster. The number of pumpkins in a cluster is estimated as explained above, but with taking into account clusters containing only one or two contours. The code is seen below:
 \begin{verbatim}
 avg_dist = 0
 
 if len(self.contours) > 2:
-	for i in range(len(self.contours)):
-    	avg_dist += min(
-        	range(len(self.contours)),
+    for i in range(len(self.contours)):
+        avg_dist += min(
+            range(len(self.contours)),
             key = lambda j: self.contours[i].distance_to(self.contours[j])
         )
-		avg_dist /= len(self.contours)
+        avg_dist /= len(self.contours)
 elif len(self.contours) == 2:
-	avg_dist = self.contours[0].distance_to(self.contours[1])
+    avg_dist = self.contours[0].distance_to(self.contours[1])
 
 return int((avg_dist / diameter) * len(self.contours)) + 1
 \end{verbatim}
 \textbf{Evaluation}\\
-An image is generated showing the results and can be seen in the file \url{output/ex3_5_marked_pumpkins_long.png}. The red circles denote individual contours, the blue circles denote the resulting clusters, and the number next to each cluster is the estimated number of pumpkins contained in the cluster. As the total number of estiamted pumpkins is slightly larger than for the previous simple method, and because of the fact, that the previous method missed some pumpkins, one could be led to believe that this clustering method is more accurate. However, it is indeed also more time consuming.
+An image is generated showing the results and can be seen in the file \url{output/ex3_5_marked_pumpkins_long.png}. The red circles denote individual contours, the blue circles denote the resulting clusters, and the number next to each cluster is the estimated number of pumpkins contained in the cluster. As the total number of estimated pumpkins is slightly larger than for the previous simple method, and because of the fact that the previous method missed some pumpkins, one could be led to believe that this clustering method is more accurate. However, it is indeed also more time consuming.
 
 \subsection{GSD}\label{subsec:gsd}
 

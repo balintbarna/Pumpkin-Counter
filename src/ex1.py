@@ -1,5 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+"""
+    Color analysis
+    
+    Author:     mgrov
+    Date:       20201802
+"""
 
 # import libraries
 import numpy as np
