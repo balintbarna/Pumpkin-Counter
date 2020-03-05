@@ -4,7 +4,7 @@
     the main executable code for counting pumpkins in a
     picture of a pumpkin field.
     
-    Author:     frnyb, mgrov, bakuv
+    Author:     frnyb
     Date:       20202102
 """
 
